@@ -1,7 +1,7 @@
 # Run the web server
 runserver:
 	@clear 
-	@cd CloudProject && python3 manage.py runserver
+	@cd CloudApp && python3 manage.py runserver
 
 # Opens the application in a web browser
 # Note: Must run 'make runserver' before
