@@ -10,8 +10,9 @@ We also recommend you open the application using Firefox as your browser.
 
 ### Prerequisites
 - Python 3.7.5
-- OpenCV 4.1.2
 - Django 3.0 
+- Django Storages
+- Boto3 (For AWS S3 connection)
 - Pillow 
 - Django storages 
 - Django crispy Forms <br /><br />
@@ -28,8 +29,13 @@ We also recommend you open the application using Firefox as your browser.
 7) Type localhost:8000 in firefox 
 
 
-## Deployment
+## Extra Notes
+Please note that lines with boto3 or bucket associated code are commented out so application could run.
+Once AWS S3 bucket as been set, save AWS S3 bucket name, keys, etc to an environmental variable and 
+edit commented code in CloudStorage/views.py file accordingly. 
 
+
+## Deployment
 1) Create Heroku Account
 2) Run "heroku create application-name"
 3) Create Procfile
